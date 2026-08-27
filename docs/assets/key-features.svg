@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="452" viewBox="0 0 1280 452" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc">
+  <title id="title">FESTAI 핵심 기능</title>
+  <desc id="desc">방문객은 QR로 접속해 승인·게시 콘텐츠 기반 AI·음성 안내, 예약·대기표, 쿠폰·리워드·설문을 이용합니다. 운영자는 콘텐츠 검수·승인·게시, 혼잡·인력·민원·사고·공지와 ESG 실적·증빙·보고서를 관리합니다. 참여업체는 초대로 가입해 부스·메뉴·쿠폰을 관리합니다. 다국어·접근성, 개인정보 동의·철회·파기와 권한별 감사 기록을 공통으로 지원합니다.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; fill: #1A2028; }
+    .heading { font-size: 27px; font-weight: 700; }
+    .subtitle { font-size: 19px; fill: #525862; }
+    .body { font-size: 19px; }
+    .label { font-size: 18px; font-weight: 700; fill: #526FA8; }
+    .role { font-size: 17px; font-weight: 700; fill: #526FA8; }
+    .icon { fill: none; stroke: #526FA8; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <rect width="1280" height="452" rx="16" fill="#EEF2F8"/>
+  <g transform="translate(24 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#DBDEE3"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EEF2F8"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="10" y="3" width="28" height="42" rx="5"/><path d="M20 9h8M21 38h6M17 18h5v5h-5ZM27 18h4v5h-4ZM17 28h5M27 28h4"/></g>
+    <text x="104" y="63" class="label">01 | 방문객 안내·참여</text>
+    <text x="24" y="132" class="heading">QR 하나로 즐기는 축제</text>
+    <text x="24" y="164" class="subtitle">다국어 · 저시력·고령자 접근성 지원</text>
+    <path d="M24 190H376" stroke="#DBDEE3"/>
+    <text x="24" y="226" class="role">AI · 음성 안내</text>
+    <text x="24" y="257" class="body">승인·게시 콘텐츠 기반 질의응답</text>
+    <text x="24" y="284" class="body">축제 일정 · 지도 · 지역상권 추천</text>
+    <text x="24" y="315" class="role">예약 · 참여</text>
+    <text x="24" y="346" class="body">회차 예약 · 모바일 대기표</text>
+    <text x="24" y="373" class="body">스탬프투어 · 쿠폰 · 리워드 · 설문</text>
+  </g>
+  <g transform="translate(440 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#DBDEE3"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EEF2F8"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="4" y="5" width="40" height="30" rx="4"/><path d="M17 43h14M24 35v8M12 26v-7M24 26V14M36 26V11"/></g>
+    <text x="104" y="63" class="label">02 | 통합 운영·ESG</text>
+    <text x="24" y="132" class="heading">한 콘솔에서 운영과 성과를</text>
+    <text x="24" y="164" class="subtitle">콘텐츠 검수 · 승인 · 게시</text>
+    <path d="M24 190H376" stroke="#DBDEE3"/>
+    <text x="24" y="226" class="role">현장 운영</text>
+    <text x="24" y="257" class="body">혼잡 · 인력 배치 · 예약 관리</text>
+    <text x="24" y="284" class="body">민원·사고 티켓 · 예약·긴급 공지</text>
+    <text x="24" y="315" class="role">ESG 성과관리</text>
+    <text x="24" y="346" class="body">플로깅 · 다회용기 · 포인트 원장</text>
+    <text x="24" y="373" class="body">실적·증빙·승인 · 보고서 내보내기</text>
+  </g>
+  <g transform="translate(856 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#DBDEE3"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EEF2F8"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><path d="M5 19 9 5h30l4 14M5 19a6 6 0 0 0 12 0 7 7 0 0 0 14 0 6 6 0 0 0 12 0M8 25v18h32V25M20 43V30h10v13M17 5l-2 14M31 5l2 14"/></g>
+    <text x="104" y="63" class="label">03 | 참여업체·공통 기반</text>
+    <text x="24" y="132" class="heading">상인과 함께 만드는 축제</text>
+    <text x="24" y="164" class="subtitle">참여업체 승인 · 초대 링크 가입</text>
+    <path d="M24 190H376" stroke="#DBDEE3"/>
+    <text x="24" y="226" class="role">참여업체 콘솔</text>
+    <text x="24" y="257" class="body">부스 · 메뉴 관리</text>
+    <text x="24" y="284" class="body">쿠폰 발행 · 사용 · 취소</text>
+    <text x="24" y="315" class="role">개인정보 · 투명성</text>
+    <text x="24" y="346" class="body">개인정보 동의·철회 · 열람·삭제·파기</text>
+    <text x="24" y="373" class="body">역할별 권한 · 감사 로그 · 편향 점검</text>
+  </g>
+</svg>
