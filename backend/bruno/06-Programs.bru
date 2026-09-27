@@ -1,0 +1,15 @@
+meta {
+  name: Programs
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/v1/public/festivals/{{festivalCode}}/programs
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+}
