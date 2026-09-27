@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1568" height="452" viewBox="0 0 1568 452" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc">
+  <title id="title">FESTAI 시스템 아키텍처</title>
+  <desc id="desc">방문객 웹과 운영자·상인 콘솔이 Next.js 서버 프록시를 통해 FastAPI에 접속합니다. 단일 백엔드는 identity, festival, engagement, commerce, operations, esg, privacy의 일곱 업무 모듈로 구성됩니다. 도메인과 유스케이스는 포트를 사용하고 PostgreSQL·AI 어댑터는 bootstrap.py에서 연결합니다. 업무 변경·감사·멱등성 기록은 같은 트랜잭션을 공유합니다. 보고서와 개인정보 파기는 별도 워커 프로세스로 실행합니다. 화살표는 주요 실행 흐름이며 소스 코드의 의존성 방향이 아닙니다.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; fill: #1A2028; }
+    .heading { font-size: 27px; font-weight: 700; }
+    .subtitle { font-size: 19px; fill: #525862; }
+    .body { font-size: 19px; }
+    .label { font-size: 18px; font-weight: 700; fill: #526FA8; }
+    .role { font-size: 17px; font-weight: 700; fill: #526FA8; }
+    .icon { fill: none; stroke: #526FA8; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .detail { font-size: 15px; fill: #525862; }
+  </style>
+  <rect width="1568" height="452" rx="16" fill="#F1F4F8"/>
+  <g transform="translate(24 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#DBDEE3"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EEF2F8"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="3" y="5" width="42" height="31" rx="4"/><path d="M3 13h42M18 43h12M24 36v7"/></g>
+    <text x="104" y="63" class="label">01 | 사용자 화면</text>
+    <text x="24" y="126" class="heading">웹 · 운영자 · 상인 콘솔</text>
+    <text x="24" y="154" class="subtitle">방문객 · 운영자 · 상인</text>
+    <text x="24" y="181" class="subtitle">Next.js · React · TypeScript</text>
+    <path d="M24 200H376" stroke="#DBDEE3"/>
+    <text x="24" y="233" class="role">QR 안내 · 예약 · 쿠폰 · 리워드</text>
+    <text x="24" y="264" class="body">콘텐츠 검수 · 현장 운영 · ESG</text>
+    <text x="24" y="288" class="detail">다국어 · 접근성 · 참여업체·부스·메뉴 관리</text>
+    <text x="24" y="315" class="role">Next.js 서버 프록시</text>
+    <text x="24" y="346" class="body">/api/backend/* · 서버 전용 API 키</text>
+  </g>
+  <g transform="translate(584 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#DBDEE3"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EEF2F8"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="4" y="5" width="40" height="16" rx="4"/><rect x="4" y="27" width="40" height="16" rx="4"/><path d="M12 13h1M12 35h1M23 13h13M23 35h13"/></g>
+    <text x="104" y="63" class="label">02 | 핵심 처리</text>
+    <text x="24" y="126" class="heading">FastAPI 서버</text>
+    <text x="24" y="154" class="subtitle">Python · 모듈러 모놀리스</text>
+    <text x="24" y="181" class="subtitle">헥사고날 · 포트와 어댑터</text>
+    <path d="M24 200H376" stroke="#DBDEE3"/>
+    <text x="24" y="233" class="role">HTTP → Application · Domain</text>
+    <text x="24" y="264" class="body">모듈 간 공개 API · 출력 포트</text>
+    <text x="24" y="288" class="detail">bootstrap.py에서 7개 업무 모듈 연결</text>
+    <text x="24" y="315" class="role">Unit of Work · 공유 트랜잭션</text>
+    <text x="24" y="346" class="body">업무 변경 + 감사 + 멱등성 기록</text>
+  </g>
+  <g transform="translate(1144 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#DBDEE3"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EEF2F8"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><ellipse cx="24" cy="9" rx="18" ry="6"/><path d="M6 9v30c0 8 36 8 36 0V9M6 24c0 8 36 8 36 0"/></g>
+    <text x="104" y="63" class="label">03 | 데이터·외부 연동</text>
+    <text x="24" y="126" class="heading">PostgreSQL</text>
+    <text x="24" y="154" class="subtitle">축제 · 예약 · 포인트 · ESG · 감사</text>
+    <text x="24" y="181" class="subtitle">psycopg · 단일 DB · 업무별 저장소</text>
+    <path d="M24 200H376" stroke="#DBDEE3"/>
+    <text x="24" y="233" class="role">Alan AI · 선택적 음성 연동</text>
+    <text x="24" y="264" class="body">승인·게시 콘텐츠 기반 안내</text>
+    <text x="24" y="288" class="detail">AI 실패 시 규칙 기반 답변으로 대체</text>
+    <text x="24" y="315" class="role">별도 워커 · scripts.worker</text>
+    <text x="24" y="346" class="body">보고서 생성 · 개인정보 파기</text>
+    <text x="24" y="373" class="detail">작업 선점 · SKIP LOCKED</text>
+  </g>
+  <g>
+    <text x="504" y="207" class="role" text-anchor="middle">HTTP</text>
+    <text x="1064" y="207" class="role" text-anchor="middle">출력 어댑터</text>
+    <path d="M440 226H568m-8-6 8 6-8 6M1000 226H1128m-8-6 8 6-8 6" fill="none" stroke="#526FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"/>
+  </g>
+</svg>

@@ -1,9 +1,26 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# 작업 지침 — FESTAI
 
-# This is NOT the Next.js you know
+## 작업 순서
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+1. [요구사항](spec.md) → [구현 계획](plan.md)을 읽습니다.
+2. 요구사항이 충돌하면 `spec.md`를 우선합니다. 요구사항·설계를 바꾸는 작업은 코드보다 먼저 담당 문서에 반영합니다.
+3. 변경한 동작의 검증 방법을 확인하고, 실행한 검사와 미확인 항목을 구분해 보고합니다.
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+## 문서 책임
 
-<!-- END:nextjs-agent-rules -->
+| 문서 | 관리 내용 |
+| --- | --- |
+| [README](README.md) | 소개·시작하기·사용법·환경 설정·테스트 명령 |
+| [요구사항](spec.md) | 범위·동작 계약·완료 기준 |
+| [구현 계획](plan.md) | 소스 구조·구현 정책·검증 전략·남은 과제 |
+| [디자인 기준](docs/design.md) | UI·접근성·시각 자산 규칙 |
+| [배포 가이드](docs/deploy.md) | 배포 구성·운영 점검 |
+| [화면 목록](docs/screenshots.md) | 화면 이미지·관리 기준 |
+
+## 변경 규칙
+
+- 상세 내용은 담당 문서 한 곳에서 관리하고 다른 문서에서는 링크합니다.
+- 설치·로컬 실행·테스트 명령은 루트 README에서 관리하며 하위 README에 중복 작성하지 않습니다.
+- Git 제외 규칙은 루트 `.gitignore`에서 관리합니다.
+- 파일 이동·제목 변경 시 상대 경로와 제목 앵커, 이미지 참조를 함께 확인합니다.
+- 요구사항과 검증 완료 상태를 구분합니다. 명령을 문서에 적었다는 이유로 통과한 것으로 기록하지 않습니다.
