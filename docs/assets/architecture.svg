@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc">
+  <title id="title">FESTAI 시스템 아키텍처</title>
+  <desc id="desc">방문객 웹과 운영자·상인 콘솔이 Next.js 서버 프록시를 통해 FastAPI에 접속합니다. 단일 백엔드는 identity, festival, engagement, commerce, operations, esg, privacy의 일곱 업무 모듈로 구성됩니다. 도메인과 유스케이스는 포트를 사용하고 PostgreSQL·AI 어댑터는 bootstrap.py에서 연결합니다. 업무 변경·감사·멱등성 기록은 같은 트랜잭션을 공유합니다. 보고서와 개인정보 파기는 별도 워커 프로세스로 실행합니다. 화살표는 주요 실행 흐름이며 소스 코드의 의존성 방향이 아닙니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 8 5 1 9" fill="none" stroke="#2D56B6" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; fill: #172D42; }
+    .heading { font-size: 25px; font-weight: 700; }
+    .body { font-size: 18px; }
+    .small { font-size: 16px; fill: #52677C; }
+    .label { font-size: 15px; font-weight: 700; fill: #2D56B6; }
+    .flow { fill: none; stroke: #2D56B6; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+  <rect width="1280" height="500" fill="#F1F4F8"/>
+
+  <text x="40" y="40" class="label">01 / 사용자 접점</text>
+  <rect x="40" y="60" width="320" height="400" rx="12" fill="#FFFFFF" stroke="#D8E1E9"/>
+  <text x="64" y="102" class="heading">방문객 · 운영자 · 상인</text>
+  <text x="64" y="134" class="small">Next.js · React · TypeScript</text>
+  <text x="64" y="166" class="small">FSD · TanStack Query · Zustand</text>
+  <path d="M64 190H336" stroke="#D8E1E9"/>
+  <text x="64" y="229" class="body">QR 안내 · 예약 · 쿠폰 · 리워드</text>
+  <text x="64" y="258" class="small">방문객 다국어 · 접근성 모드</text>
+  <text x="64" y="305" class="body">콘텐츠 검수 · 현장 운영 · ESG</text>
+  <text x="64" y="334" class="small">참여업체 · 부스 · 메뉴 관리</text>
+  <text x="64" y="389" class="body">Next.js 서버 프록시</text>
+  <text x="64" y="418" class="small">/api/backend/* · 서버 전용 API 키</text>
+
+  <text x="480" y="40" class="label">02 / 핵심 처리</text>
+  <rect x="480" y="60" width="320" height="400" rx="12" fill="#E7EDF9" stroke="#2D56B6"/>
+  <text x="504" y="102" class="heading">FastAPI 서버</text>
+  <text x="504" y="134" class="small">Python · 모듈러 모놀리스</text>
+  <text x="504" y="166" class="small">클린 · 헥사고날 아키텍처</text>
+  <path d="M504 190H776" stroke="#D8E1E9"/>
+  <text x="504" y="229" class="body">HTTP → Application · Domain</text>
+  <text x="504" y="258" class="small">identity · festival · engagement</text>
+  <text x="504" y="284" class="small">commerce · operations · esg · privacy</text>
+  <text x="504" y="331" class="body">모듈 간 공개 API · 출력 포트</text>
+  <text x="504" y="360" class="small">bootstrap.py에서 어댑터 연결</text>
+  <text x="504" y="407" class="body">Unit of Work · 공유 트랜잭션</text>
+  <text x="504" y="436" class="small">업무 변경 + 감사 + 멱등성 기록</text>
+
+  <text x="920" y="40" class="label">03 / 데이터 · 외부 연동</text>
+  <rect x="920" y="60" width="320" height="400" rx="12" fill="#FFFFFF" stroke="#D8E1E9"/>
+  <text x="944" y="102" class="heading">PostgreSQL</text>
+  <text x="944" y="134" class="small">psycopg · 단일 DB · 업무별 저장소</text>
+  <text x="944" y="166" class="small">축제 · 예약 · 포인트 · ESG · 감사</text>
+  <path d="M944 190H1216" stroke="#D8E1E9"/>
+  <text x="944" y="229" class="body">Alan AI · 선택적 음성 연동</text>
+  <text x="944" y="258" class="small">승인·게시 콘텐츠 기반 안내</text>
+  <text x="944" y="287" class="small">AI 실패 시 규칙 기반 답변으로 대체</text>
+  <text x="944" y="346" class="body">별도 워커 · scripts.worker</text>
+  <text x="944" y="375" class="small">보고서 생성 · 개인정보 파기</text>
+  <text x="944" y="418" class="small">작업 선점 · SKIP LOCKED</text>
+
+  <path d="M368 236H472" class="flow"/>
+  <text x="420" y="213" class="small" text-anchor="middle">HTTP</text>
+  <path d="M808 236H912" class="flow"/>
+  <text x="860" y="198" class="small" text-anchor="middle">출력 포트</text>
+  <text x="860" y="219" class="small" text-anchor="middle">· 어댑터</text>
+</svg>

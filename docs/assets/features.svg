@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 416" width="1000" height="416" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">
+  <defs>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0147ff"/><stop offset="1" stop-color="#0a7a36"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0147ff"/><stop offset="1" stop-color="#1dca5e"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .card { fill:#ffffff; stroke:#e0e0e0; stroke-width:1.5; }
+    .foot { fill:#f5f5f7; stroke:#e0e0e0; stroke-width:1.5; }
+    .h    { font-size:13.5px; font-weight:700; fill:#1d1d1f; }
+    .b    { font-size:11.5px; fill:#6e6e73; }
+    .heroT{ font-size:21px; font-weight:700; fill:#ffffff; }
+    .heroS{ font-size:12.5px; fill:#ffffff; opacity:.88; }
+    .footH{ font-size:12.5px; font-weight:700; fill:#1d1d1f; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="416" rx="12" fill="#ffffff"/>
+
+  <!-- 히어로 -->
+  <rect x="24" y="24" width="968" height="76" rx="18" fill="url(#ink)"/>
+  <text class="heroT" x="48" y="60">FESTAI — AI·ESG 기반 지역축제 플랫폼</text>
+  <text class="heroS" x="48" y="82">신뢰(Trust)를 축으로 재설계 · 방문객은 QR 하나로, 주무관은 한 콘솔에서</text>
+
+  <!-- 핵심 기능 5축 -->
+  <g>
+    <rect class="card" x="24" y="124" width="184" height="168" rx="18"/>
+    <rect x="42" y="146" width="4" height="16" rx="2" fill="#0147ff"/>
+    <text class="h" x="54" y="159">AI 축제 안내</text>
+    <text class="b" x="42" y="190">승인 콘텐츠 기반 Q&amp;A</text>
+    <text class="b" x="42" y="212">아바타·음성 안내</text>
+    <text class="b" x="42" y="234">맞춤 코스·혼잡도</text>
+    <text class="b" x="42" y="256">접근성·키오스크 모드</text>
+
+    <rect class="card" x="220" y="124" width="184" height="168" rx="18"/>
+    <rect x="238" y="146" width="4" height="16" rx="2" fill="#0147ff"/>
+    <text class="h" x="250" y="159">QR 모바일 웹</text>
+    <text class="b" x="238" y="190">일정·지도·교통 안내</text>
+    <text class="b" x="238" y="212">예약·모바일 대기표</text>
+    <text class="b" x="238" y="234">스탬프투어·쿠폰</text>
+    <text class="b" x="238" y="256">지역상권 추천·설문</text>
+
+    <rect class="card" x="416" y="124" width="184" height="168" rx="18"/>
+    <rect x="434" y="146" width="4" height="16" rx="2" fill="#0147ff"/>
+    <text class="h" x="446" y="159">통합 운영관리</text>
+    <text class="b" x="434" y="190">콘텐츠 검수·승인·게시</text>
+    <text class="b" x="434" y="212">민원·공지·사고 티켓</text>
+    <text class="b" x="434" y="234">혼잡도·인력·예약 관리</text>
+    <text class="b" x="434" y="256">AI 민원 분류·감사 로그</text>
+
+    <rect class="card" x="612" y="124" width="184" height="168" rx="18"/>
+    <rect x="630" y="146" width="4" height="16" rx="2" fill="#1dca5e"/>
+    <text class="h" x="642" y="159">ESG 성과관리</text>
+    <text class="b" x="630" y="190">실적 등록·증빙·승인</text>
+    <text class="b" x="630" y="212">플로깅·다회용기 인증</text>
+    <text class="b" x="630" y="234">리워드 포인트 원장</text>
+    <text class="b" x="630" y="256">보고서 생성·내보내기</text>
+
+    <rect class="card" x="808" y="124" width="184" height="168" rx="18"/>
+    <rect x="826" y="146" width="4" height="16" rx="2" fill="#0147ff"/>
+    <text class="h" x="838" y="159">참여업체 콘솔</text>
+    <text class="b" x="826" y="190">초대 링크 상인 계정</text>
+    <text class="b" x="826" y="212">부스·메뉴 관리</text>
+    <text class="b" x="826" y="234">쿠폰 발행·사용·취소</text>
+    <text class="b" x="826" y="256">매출·성과 조회</text>
+  </g>
+
+  <!-- 전 기능 공통 기반 -->
+  <rect class="foot" x="24" y="316" width="478" height="76" rx="18"/>
+  <rect x="24" y="332" width="4" height="44" rx="2" fill="url(#brand)"/>
+  <text class="footH" x="48" y="346">다국어 · 접근성</text>
+  <text class="b" x="48" y="368">한국어 원본에서 생성한 영어·중국어·일본어 사전, 접근성 선호 저장</text>
+
+  <rect class="foot" x="514" y="316" width="478" height="76" rx="18"/>
+  <rect x="514" y="332" width="4" height="44" rx="2" fill="url(#brand)"/>
+  <text class="footH" x="538" y="346">개인정보 · 투명성</text>
+  <text class="b" x="538" y="368">수집 근거·보유기간 고지, 동의·철회, 열람·삭제, 파기 배치, 편향 점검</text>
+</svg>
